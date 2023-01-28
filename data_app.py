@@ -7,7 +7,7 @@ Created on Sat Jan 28 15:44:55 2023
 
 import pandas as pd
 import streamlit as st
-import matplotlib as plt
+
 file = "C:\\Users\\Home PC\\Downloads\\class 2\\Billionaire.csv"
 df = pd.read_csv('Billionaire.csv')
 df['NetWorth'] = df['NetWorth'].apply(lambda x: float(x.replace('$', '').replace(' B', '')))
